@@ -2,7 +2,13 @@
 <html>
 <title>About K.C.Ashish Kumar</title>
 <body>
-	<img src="assets/images/aboutMe.png" id="aboutProfile" style="width:829px;border:1px solid rgb(125,190,255);border-radius:22px;position:absolute;left:50%;margin-left:-414px;"/>
-	<div style="height:9000px;"></div>
+	<div id="profileContainer">
+		<img src="assets/images/aboutMe.png" id="aboutProfile" style="width:829px;height:8536px;border:1px solid rgb(125,190,255);border-radius:22px;position:absolute;left:50%;margin-left:-414px;"/>
+	</div>
+	<script type="text/javascript">
+	(function(){
+		document.getElementById("profileContainer").style.height=(document.getElementById("aboutProfile").offsetHeight+50)+"px";
+	}());
+	</script>
 </body>
 </html>
