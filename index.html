@@ -40,11 +40,26 @@
 .dloadLinks img{
 	cursor:pointer;
 }
+.infoTextHeader{
+	position:absolute;
+	top:95px;
+	left:22px;
+	font-family: 'Orbitron', sans-serif;
+	font-weight:bold;
+}
+.headerInfoText{
+	position:relative;
+	top:-15px;
+	font-size:22px;
+}
 </style>
 <body>
 	<div class="topBar"></div>
 	<div class="topBar"></div>
 	<div class="topBar">
+		<div class="infoTextHeader">
+			<span class="headerInfoText">powered by <a href="http://www.ashishkumarkc.com" target="_blank">Ashish's Web</a></span>
+		</div>
 		<div class="dloadLinks">
 			<span class="dText">Download Here:</span> &nbsp;
 			<img src="assets/icons/word_icon.png" title="Download in Word Document Format" onclick="dloadDoc('docx');"/> &nbsp;
