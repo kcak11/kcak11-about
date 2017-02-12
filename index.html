@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 <title>K.C.Ashish Kumar's CV</title>
+<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" />
 <style type="text/css">
-#topBar{
-	height:88px;
-	box-shadow:0px 0px 88px rgb(0,128,255);
+.topBar{
+	height:100px;
+	box-shadow:0px 0px 100px rgb(0,128,255);
 	position:absolute;
-	top:-88px;
+	top:-100px;
 	left:0px;
 	right:0px;
 }
@@ -21,17 +22,35 @@
 	margin-left:-414px;
 }
 .spacer{
-	height:88px;
+	height:100px;
 }
 .dloadLinks{
 	position:absolute;
-	top:88px;
+	top:110px;
 	right:22px;
+	font-family: 'Orbitron', sans-serif;
+	font-weight:bold;
+}
+.dText{
+	border-bottom:1px dashed rgb(0,128,255);
+	position:relative;
+	top:-15px;
+	font-size:22px;
+}
+.dloadLinks img{
+	cursor:pointer;
 }
 </style>
 <body>
-	<div id="topBar">
-		<div class="dloadLinks">Download: </div>
+	<div class="topBar"></div>
+	<div class="topBar"></div>
+	<div class="topBar"></div>
+	<div class="topBar">
+		<div class="dloadLinks">
+			<span class="dText">Download Here:</span> &nbsp;
+			<img src="assets/icons/word_icon.png" title="Download in Word Document Format" onclick="dloadDoc('docx');"/> &nbsp;
+			<img src="assets/icons/pdf_icon.png" title="Download in PDF Document Format" onclick="dloadDoc('pdf');"/>
+		</div>
 	</div>
 	<div class="spacer"></div>
 	<div id="profileContainer">
@@ -41,6 +60,9 @@
 	document.oncontextmenu=function(e){return false;};
 	(function(){
 		document.getElementById("profileContainer").style.height=(document.getElementById("aboutProfile").offsetHeight+50)+"px";
+		window.dloadDoc=function(type){
+			window.open("files/Ashish_CV_Document."+type,"_blank");
+		};
 	}());
 	</script>
 </body>
