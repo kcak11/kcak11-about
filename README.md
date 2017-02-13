@@ -1,2 +1,2 @@
-# kcak11-cv
-Repository for http://cv.ashishkumarkc.com
+# CV
+## Repository for http://cv.ashishkumarkc.com
