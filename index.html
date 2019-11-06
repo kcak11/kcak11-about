@@ -612,7 +612,7 @@
         (function() {
             document.getElementById("profileContainer").style.height = (document.getElementById("aboutProfile").offsetHeight + 50) + "px";
             window.dloadDoc = function(type) {
-                window.open("files/Ashish_CV_Document." + type, "_blank");
+                window.open("files/Ashish_CV_Document." + type + "?reqID=" + new Date().getTime(), "_blank");
             };
         }());
     </script>
